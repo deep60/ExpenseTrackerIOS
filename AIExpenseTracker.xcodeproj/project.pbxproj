@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB0E97B22BF8B5B6007D19AA /* CategoryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0E97B12BF8B5B5007D19AA /* CategoryImageView.swift */; };
+		DB2AD3B52C201D5D00055395 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2AD3B42C201D5D00055395 /* Date+Extension.swift */; };
+		DB3D34F62C19730B009B7C77 /* FunctionArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D34F52C19730B009B7C77 /* FunctionArguments.swift */; };
+		DB3D34F82C197389009B7C77 /* FunctionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D34F72C197389009B7C77 /* FunctionResponse.swift */; };
+		DB3D34FA2C197522009B7C77 /* FunctionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3D34F92C197522009B7C77 /* FunctionsManager.swift */; };
+		DB4552442BF93F4D003FE219 /* LogItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4552432BF93F4D003FE219 /* LogItemView.swift */; };
+		DB4552462BF94607003FE219 /* LogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4552452BF94607003FE219 /* LogListView.swift */; };
+		DB4859382C21570600062990 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4859372C21570500062990 /* ChartView.swift */; };
+		DB7BB3D02BEE7B9500BA9FAC /* AIExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7BB3CF2BEE7B9500BA9FAC /* AIExpenseTrackerApp.swift */; };
+		DB7BB3D22BEE7B9500BA9FAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7BB3D12BEE7B9500BA9FAC /* ContentView.swift */; };
+		DB7BB3D42BEE7B9800BA9FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7BB3D32BEE7B9800BA9FAC /* Assets.xcassets */; };
+		DB7BB3D82BEE7B9800BA9FAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7BB3D72BEE7B9800BA9FAC /* Preview Assets.xcassets */; };
+		DB7BB3E32BEF5A3700BA9FAC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DB7BB3E22BEF5A3700BA9FAC /* FirebaseFirestore */; };
+		DB7BB3E52BEF5A4A00BA9FAC /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB7BB3E42BEF5A4A00BA9FAC /* FirebaseFirestoreSwift */; };
+		DB94095F2C16E6FF002BE74E /* ChatGPTUI in Frameworks */ = {isa = PBXBuildFile; productRef = DB94095E2C16E6FF002BE74E /* ChatGPTUI */; };
+		DB9409632C16E84D002BE74E /* AIAssistantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9409622C16E84D002BE74E /* AIAssistantView.swift */; };
+		DB9409662C17173F002BE74E /* FunctionTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9409652C17173F002BE74E /* FunctionTools.swift */; };
+		DB9409692C1822B4002BE74E /* AIAssistantResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9409682C1822B4002BE74E /* AIAssistantResponseView.swift */; };
+		DB94096B2C182311002BE74E /* AIAssistantTextChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94096A2C182311002BE74E /* AIAssistantTextChatViewModel.swift */; };
+		DB9E3D1F2C1E977C00B4E104 /* AIAssistantVoiceChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9E3D1E2C1E977C00B4E104 /* AIAssistantVoiceChatViewModel.swift */; };
+		DBB149E92BFF625100689D67 /* LogFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB149E82BFF625100689D67 /* LogFormView.swift */; };
+		DBB4F7042BFBE9F300279B8F /* LogListContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB4F7032BFBE9F300279B8F /* LogListContainerView.swift */; };
+		DBDD60372BFF16EC00162A78 /* LogFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDD60362BFF16EC00162A78 /* LogFormViewModel.swift */; };
+		DBF6E0A12BF4B47100F10E91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF6E0A02BF4B47100F10E91 /* AppDelegate.swift */; };
+		DBF6E0A42BF4BA5B00F10E91 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF6E0A32BF4BA5B00F10E91 /* Category.swift */; };
+		DBF6E0A62BF4BB2700F10E91 /* ExpenseLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF6E0A52BF4BB2700F10E91 /* ExpenseLog.swift */; };
+		DBF6E0A82BF5158900F10E91 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF6E0A72BF5158900F10E91 /* Sort.swift */; };
+		DBF6E0AA2BF5235900F10E91 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF6E0A92BF5235900F10E91 /* Utils.swift */; };
+		DBF6E0AC2BF5277300F10E91 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF6E0AB2BF5277300F10E91 /* DatabaseManager.swift */; };
+		DBF6E0AF2BF5341E00F10E91 /* LogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF6E0AE2BF5341E00F10E91 /* LogListViewModel.swift */; };
+		DBF6E0B22BF53C7300F10E91 /* FilterCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF6E0B12BF53C7300F10E91 /* FilterCategoriesView.swift */; };
+		DBF6E0B42BF6894500F10E91 /* SelectSortOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF6E0B32BF6894500F10E91 /* SelectSortOrderView.swift */; };
+		DBFE42BA2C1E1C3F00EEBEB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBFE42B92C1E1C3F00EEBEB4 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB0E97B12BF8B5B5007D19AA /* CategoryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryImageView.swift; sourceTree = "<group>"; };
+		DB2AD3B42C201D5D00055395 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		DB3D34F52C19730B009B7C77 /* FunctionArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionArguments.swift; sourceTree = "<group>"; };
+		DB3D34F72C197389009B7C77 /* FunctionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionResponse.swift; sourceTree = "<group>"; };
+		DB3D34F92C197522009B7C77 /* FunctionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionsManager.swift; sourceTree = "<group>"; };
+		DB4552432BF93F4D003FE219 /* LogItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogItemView.swift; sourceTree = "<group>"; };
+		DB4552452BF94607003FE219 /* LogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListView.swift; sourceTree = "<group>"; };
+		DB4859372C21570500062990 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		DB7BB3CC2BEE7B9500BA9FAC /* AIExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7BB3CF2BEE7B9500BA9FAC /* AIExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIExpenseTrackerApp.swift; sourceTree = "<group>"; };
+		DB7BB3D12BEE7B9500BA9FAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB7BB3D32BEE7B9800BA9FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB7BB3D52BEE7B9800BA9FAC /* AIExpenseTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AIExpenseTracker.entitlements; sourceTree = "<group>"; };
+		DB7BB3D72BEE7B9800BA9FAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB7BB3E62BEF5AD100BA9FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DB9409622C16E84D002BE74E /* AIAssistantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAssistantView.swift; sourceTree = "<group>"; };
+		DB9409652C17173F002BE74E /* FunctionTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionTools.swift; sourceTree = "<group>"; };
+		DB9409682C1822B4002BE74E /* AIAssistantResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAssistantResponseView.swift; sourceTree = "<group>"; };
+		DB94096A2C182311002BE74E /* AIAssistantTextChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAssistantTextChatViewModel.swift; sourceTree = "<group>"; };
+		DB9E3D1E2C1E977C00B4E104 /* AIAssistantVoiceChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIAssistantVoiceChatViewModel.swift; sourceTree = "<group>"; };
+		DBB149E82BFF625100689D67 /* LogFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFormView.swift; sourceTree = "<group>"; };
+		DBB4F7032BFBE9F300279B8F /* LogListContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListContainerView.swift; sourceTree = "<group>"; };
+		DBDD60362BFF16EC00162A78 /* LogFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFormViewModel.swift; sourceTree = "<group>"; };
+		DBF6E0A02BF4B47100F10E91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBF6E0A32BF4BA5B00F10E91 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		DBF6E0A52BF4BB2700F10E91 /* ExpenseLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseLog.swift; sourceTree = "<group>"; };
+		DBF6E0A72BF5158900F10E91 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
+		DBF6E0A92BF5235900F10E91 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		DBF6E0AB2BF5277300F10E91 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		DBF6E0AE2BF5341E00F10E91 /* LogListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogListViewModel.swift; sourceTree = "<group>"; };
+		DBF6E0B12BF53C7300F10E91 /* FilterCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCategoriesView.swift; sourceTree = "<group>"; };
+		DBF6E0B32BF6894500F10E91 /* SelectSortOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSortOrderView.swift; sourceTree = "<group>"; };
+		DBFE42B92C1E1C3F00EEBEB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB7BB3C92BEE7B9500BA9FAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB7BB3E32BEF5A3700BA9FAC /* FirebaseFirestore in Frameworks */,
+				DB94095F2C16E6FF002BE74E /* ChatGPTUI in Frameworks */,
+				DB7BB3E52BEF5A4A00BA9FAC /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB7BB3C32BEE7B9500BA9FAC = {
+			isa = PBXGroup;
+			children = (
+				DB7BB3CE2BEE7B9500BA9FAC /* AIExpenseTracker */,
+				DB7BB3CD2BEE7B9500BA9FAC /* Products */,
+				DB7BB3E12BEF5A3700BA9FAC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DB7BB3CD2BEE7B9500BA9FAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB7BB3CC2BEE7B9500BA9FAC /* AIExpenseTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB7BB3CE2BEE7B9500BA9FAC /* AIExpenseTracker */ = {
+			isa = PBXGroup;
+			children = (
+				DB9409602C16E81A002BE74E /* AIAssistant */,
+				DBF6E0B02BF5392800F10E91 /* Views */,
+				DBF6E0AD2BF5340300F10E91 /* ViewModel */,
+				DBF6E0A22BF4BA4700F10E91 /* Model */,
+				DB7BB3E62BEF5AD100BA9FAC /* Info.plist */,
+				DB7BB3CF2BEE7B9500BA9FAC /* AIExpenseTrackerApp.swift */,
+				DBF6E0A02BF4B47100F10E91 /* AppDelegate.swift */,
+				DB7BB3D12BEE7B9500BA9FAC /* ContentView.swift */,
+				DB7BB3D32BEE7B9800BA9FAC /* Assets.xcassets */,
+				DBFE42B92C1E1C3F00EEBEB4 /* GoogleService-Info.plist */,
+				DB7BB3D52BEE7B9800BA9FAC /* AIExpenseTracker.entitlements */,
+				DB7BB3D62BEE7B9800BA9FAC /* Preview Content */,
+				DBF6E0A92BF5235900F10E91 /* Utils.swift */,
+				DBF6E0AB2BF5277300F10E91 /* DatabaseManager.swift */,
+			);
+			path = AIExpenseTracker;
+			sourceTree = "<group>";
+		};
+		DB7BB3D62BEE7B9800BA9FAC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DB7BB3D72BEE7B9800BA9FAC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB7BB3E12BEF5A3700BA9FAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB9409602C16E81A002BE74E /* AIAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				DB9409672C182282002BE74E /* ViewModels */,
+				DB9409642C171727002BE74E /* Models */,
+				DB9409612C16E83B002BE74E /* Views */,
+				DB3D34F92C197522009B7C77 /* FunctionsManager.swift */,
+				DB2AD3B42C201D5D00055395 /* Date+Extension.swift */,
+			);
+			path = AIAssistant;
+			sourceTree = "<group>";
+		};
+		DB9409612C16E83B002BE74E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB9409622C16E84D002BE74E /* AIAssistantView.swift */,
+				DB9409682C1822B4002BE74E /* AIAssistantResponseView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB9409642C171727002BE74E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB9409652C17173F002BE74E /* FunctionTools.swift */,
+				DB3D34F52C19730B009B7C77 /* FunctionArguments.swift */,
+				DB3D34F72C197389009B7C77 /* FunctionResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB9409672C182282002BE74E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DB94096A2C182311002BE74E /* AIAssistantTextChatViewModel.swift */,
+				DB9E3D1E2C1E977C00B4E104 /* AIAssistantVoiceChatViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DBF6E0A22BF4BA4700F10E91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBF6E0A32BF4BA5B00F10E91 /* Category.swift */,
+				DBF6E0A52BF4BB2700F10E91 /* ExpenseLog.swift */,
+				DBF6E0A72BF5158900F10E91 /* Sort.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBF6E0AD2BF5340300F10E91 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DBF6E0AE2BF5341E00F10E91 /* LogListViewModel.swift */,
+				DBDD60362BFF16EC00162A78 /* LogFormViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DBF6E0B02BF5392800F10E91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBF6E0B12BF53C7300F10E91 /* FilterCategoriesView.swift */,
+				DBF6E0B32BF6894500F10E91 /* SelectSortOrderView.swift */,
+				DB0E97B12BF8B5B5007D19AA /* CategoryImageView.swift */,
+				DB4552432BF93F4D003FE219 /* LogItemView.swift */,
+				DB4552452BF94607003FE219 /* LogListView.swift */,
+				DBB4F7032BFBE9F300279B8F /* LogListContainerView.swift */,
+				DBB149E82BFF625100689D67 /* LogFormView.swift */,
+				DB4859372C21570500062990 /* ChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB7BB3CB2BEE7B9500BA9FAC /* AIExpenseTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB7BB3DB2BEE7B9800BA9FAC /* Build configuration list for PBXNativeTarget "AIExpenseTracker" */;
+			buildPhases = (
+				DB7BB3C82BEE7B9500BA9FAC /* Sources */,
+				DB7BB3C92BEE7B9500BA9FAC /* Frameworks */,
+				DB7BB3CA2BEE7B9500BA9FAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIExpenseTracker;
+			packageProductDependencies = (
+				DB7BB3E22BEF5A3700BA9FAC /* FirebaseFirestore */,
+				DB7BB3E42BEF5A4A00BA9FAC /* FirebaseFirestoreSwift */,
+				DB94095E2C16E6FF002BE74E /* ChatGPTUI */,
+			);
+			productName = AIExpenseTracker;
+			productReference = DB7BB3CC2BEE7B9500BA9FAC /* AIExpenseTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB7BB3C42BEE7B9500BA9FAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					DB7BB3CB2BEE7B9500BA9FAC = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = DB7BB3C72BEE7B9500BA9FAC /* Build configuration list for PBXProject "AIExpenseTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB7BB3C32BEE7B9500BA9FAC;
+			packageReferences = (
+				DB7BB3E02BEF500700BA9FAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DB94095D2C16E6FF002BE74E /* XCRemoteSwiftPackageReference "ChatGPTUI" */,
+			);
+			productRefGroup = DB7BB3CD2BEE7B9500BA9FAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB7BB3CB2BEE7B9500BA9FAC /* AIExpenseTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB7BB3CA2BEE7B9500BA9FAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB7BB3D82BEE7B9800BA9FAC /* Preview Assets.xcassets in Resources */,
+				DBFE42BA2C1E1C3F00EEBEB4 /* GoogleService-Info.plist in Resources */,
+				DB7BB3D42BEE7B9800BA9FAC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB7BB3C82BEE7B9500BA9FAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBF6E0AC2BF5277300F10E91 /* DatabaseManager.swift in Sources */,
+				DBF6E0A62BF4BB2700F10E91 /* ExpenseLog.swift in Sources */,
+				DB94096B2C182311002BE74E /* AIAssistantTextChatViewModel.swift in Sources */,
+				DB9E3D1F2C1E977C00B4E104 /* AIAssistantVoiceChatViewModel.swift in Sources */,
+				DB9409662C17173F002BE74E /* FunctionTools.swift in Sources */,
+				DBF6E0A12BF4B47100F10E91 /* AppDelegate.swift in Sources */,
+				DBDD60372BFF16EC00162A78 /* LogFormViewModel.swift in Sources */,
+				DBB149E92BFF625100689D67 /* LogFormView.swift in Sources */,
+				DB9409692C1822B4002BE74E /* AIAssistantResponseView.swift in Sources */,
+				DB7BB3D22BEE7B9500BA9FAC /* ContentView.swift in Sources */,
+				DB3D34FA2C197522009B7C77 /* FunctionsManager.swift in Sources */,
+				DBB4F7042BFBE9F300279B8F /* LogListContainerView.swift in Sources */,
+				DB3D34F82C197389009B7C77 /* FunctionResponse.swift in Sources */,
+				DBF6E0AA2BF5235900F10E91 /* Utils.swift in Sources */,
+				DB7BB3D02BEE7B9500BA9FAC /* AIExpenseTrackerApp.swift in Sources */,
+				DB2AD3B52C201D5D00055395 /* Date+Extension.swift in Sources */,
+				DB0E97B22BF8B5B6007D19AA /* CategoryImageView.swift in Sources */,
+				DBF6E0B42BF6894500F10E91 /* SelectSortOrderView.swift in Sources */,
+				DBF6E0A42BF4BA5B00F10E91 /* Category.swift in Sources */,
+				DBF6E0AF2BF5341E00F10E91 /* LogListViewModel.swift in Sources */,
+				DB3D34F62C19730B009B7C77 /* FunctionArguments.swift in Sources */,
+				DB9409632C16E84D002BE74E /* AIAssistantView.swift in Sources */,
+				DBF6E0A82BF5158900F10E91 /* Sort.swift in Sources */,
+				DB4859382C21570600062990 /* ChartView.swift in Sources */,
+				DB4552462BF94607003FE219 /* LogListView.swift in Sources */,
+				DBF6E0B22BF53C7300F10E91 /* FilterCategoriesView.swift in Sources */,
+				DB4552442BF93F4D003FE219 /* LogItemView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DB7BB3D92BEE7B9800BA9FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB7BB3DA2BEE7B9800BA9FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		DB7BB3DC2BEE7B9800BA9FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AIExpenseTracker/AIExpenseTracker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AIExpenseTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = LHG395YCPD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AIExpenseTracker/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Talk with AI Assistant";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AIExpenseTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		DB7BB3DD2BEE7B9800BA9FAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AIExpenseTracker/AIExpenseTracker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AIExpenseTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = LHG395YCPD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AIExpenseTracker/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Talk with AI Assistant";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AIExpenseTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB7BB3C72BEE7B9500BA9FAC /* Build configuration list for PBXProject "AIExpenseTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB7BB3D92BEE7B9800BA9FAC /* Debug */,
+				DB7BB3DA2BEE7B9800BA9FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB7BB3DB2BEE7B9800BA9FAC /* Build configuration list for PBXNativeTarget "AIExpenseTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB7BB3DC2BEE7B9800BA9FAC /* Debug */,
+				DB7BB3DD2BEE7B9800BA9FAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB7BB3E02BEF500700BA9FAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+		DB94095D2C16E6FF002BE74E /* XCRemoteSwiftPackageReference "ChatGPTUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/ChatGPTUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.12;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB7BB3E22BEF5A3700BA9FAC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB7BB3E02BEF500700BA9FAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		DB7BB3E42BEF5A4A00BA9FAC /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB7BB3E02BEF500700BA9FAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		DB94095E2C16E6FF002BE74E /* ChatGPTUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB94095D2C16E6FF002BE74E /* XCRemoteSwiftPackageReference "ChatGPTUI" */;
+			productName = ChatGPTUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DB7BB3C42BEE7B9500BA9FAC /* Project object */;
+}
